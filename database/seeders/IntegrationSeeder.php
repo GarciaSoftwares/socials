@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Integration;
+use App\Services\Instagram\Instagram;
 use Illuminate\Database\Seeder;
 
 class IntegrationSeeder extends Seeder
@@ -16,8 +17,6 @@ class IntegrationSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->integration->factory()->create([
-            ''
-        ]);
+        $this->integration->factory()->instagram()->create();
     }
 }

@@ -23,6 +23,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $email_verified_at
  * @property mixed $password
  * @property string|null $remember_token
+ * @property string|null $avatar
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
@@ -33,6 +34,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder|User newQuery()
  * @method static Builder|User onlyTrashed()
  * @method static Builder|User query()
+ * @method static Builder|User whereAvatar($value)
  * @method static Builder|User whereCreatedAt($value)
  * @method static Builder|User whereDeletedAt($value)
  * @method static Builder|User whereEmail($value)
