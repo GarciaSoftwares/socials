@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Integration>
@@ -16,8 +17,15 @@ class IntegrationFactory extends Factory
      */
     public function definition(): array
     {
+        $name = $this->faker->name();;
+
         return [
-            //
+             'name' => $name,
+             'slug' => Str::slug($name),
+             'description' => $this->faker->text(),
+             'status' => $this->faker->randomElement(['active', 'inactive']),
+             'logo' => $this->faker->imageUrl(),
+
         ];
     }
 }

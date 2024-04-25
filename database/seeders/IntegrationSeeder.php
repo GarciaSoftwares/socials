@@ -16,5 +16,8 @@ class IntegrationSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->integration->factory()->create([
+            ''
+        ]);
     }
 }
