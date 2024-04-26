@@ -2,7 +2,9 @@
 
 namespace App\Services\Instagram;
 
-use App\Services\Instagram\Contracts\InstagramService;
+use App\Services\Instagram\API\Contracts\InstagramApiContract;
+use App\Services\Instagram\API\InstagramApi;
+use App\Services\Instagram\Contracts\InstagramServiceContract;
 use Illuminate\Support\ServiceProvider;
 
 class InstagramServiceProvider extends ServiceProvider
@@ -13,7 +15,8 @@ class InstagramServiceProvider extends ServiceProvider
      * @var array
      */
     public array $bindings = [
-        InstagramService::class => Instagram::class,
+        InstagramServiceContract::class => InstagramService::class,
+        InstagramApiContract::class     => InstagramApi::class
     ];
 
     /**

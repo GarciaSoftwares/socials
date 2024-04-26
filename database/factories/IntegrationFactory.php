@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Enums\IntegrationStatusEnum;
 use App\Models\Integration;
-use App\Services\Instagram\Contracts\InstagramService;
+use App\Services\Instagram\Contracts\InstagramServiceContract;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -27,7 +27,7 @@ class IntegrationFactory extends Factory
             'key'         => Str::slug($name),
             'description' => $this->faker->text(),
             'status'      => $this->faker->randomElement(IntegrationStatusEnum::values()),
-            'logo'        => $this->faker->image(),
+            'logo'        => $this->faker->imageUrl(),
         ];
     }
 
@@ -54,11 +54,11 @@ class IntegrationFactory extends Factory
 
     public function instagram(): IntegrationFactory
     {
-        return $this->state(fn(array $attributes) => [
-            'name'        => InstagramService::NAME,
-            'key'         => InstagramService::KEY,
-            'description' => InstagramService::DESCRIPTION,
-            'logo'        => '/images/integrations/instagram.png',
+        return $this->state(state: fn(array $attributes) => [
+            'name'        => InstagramServiceContract::NAME,
+            'key'         => InstagramServiceContract::KEY,
+            'description' => InstagramServiceContract::DESCRIPTION,
+            'logo'        => InstagramServiceContract::LOGO,
         ]);
     }
 }

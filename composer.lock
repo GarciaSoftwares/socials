@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "066b254a47daf37e5f04c147c8d5a05a",
+    "content-hash": "bc7a6afeea88f6652d9489e1b598714f",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -4049,6 +4049,138 @@
             "time": "2024-01-09T09:30:37+00:00"
         },
         {
+            "name": "phpfastcache/phpfastcache",
+            "version": "9.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPSocialNetwork/phpfastcache.git",
+                "reference": "372d62e0bbab5bcfac6404dc912040b038a3afb7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPSocialNetwork/phpfastcache/zipball/372d62e0bbab5bcfac6404dc912040b038a3afb7",
+                "reference": "372d62e0bbab5bcfac6404dc912040b038a3afb7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=8.0",
+                "psr/cache": "^2.0||^3.0",
+                "psr/simple-cache": "^2.0||^3.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "2.0|3.0",
+                "psr/simple-cache-implementation": "2.0|3.0"
+            },
+            "require-dev": {
+                "ext-gettext": "*",
+                "jetbrains/phpstorm-stubs": "dev-master",
+                "league/climate": "^3.8",
+                "phpfastcache/phpfastcache-devtools": "dev-master",
+                "phpmd/phpmd": "@stable",
+                "phpstan/phpstan": "@stable",
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "suggest": {
+                "ext-apcu": "*",
+                "ext-cassandra": "*",
+                "ext-couchbase": "^3.0",
+                "ext-curl": "*",
+                "ext-intl": "*",
+                "ext-leveldb": "*",
+                "ext-memcache": "*",
+                "ext-memcached": "*",
+                "ext-redis": "*",
+                "ext-sqlite": "*",
+                "ext-wincache": "*",
+                "phpfastcache/arangodb-extension": "^9.2",
+                "phpfastcache/couchbasev4-extension": "^9.2",
+                "phpfastcache/couchdb-extension": "^9.2",
+                "phpfastcache/dynamodb-extension": "^9.2",
+                "phpfastcache/firestore-extension": "^9.2",
+                "phpfastcache/mongodb-extension": "^9.2",
+                "phpfastcache/phpssdb": "~1.1.0",
+                "phpfastcache/ravendb-extension": "^9.2",
+                "phpfastcache/solr-extension": "^9.2",
+                "predis/predis": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpfastcache\\": "lib/Phpfastcache/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Georges.L",
+                    "email": "contact@geolim4.com",
+                    "homepage": "https://github.com/Geolim4",
+                    "role": "Actual Project Manager/Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PHPSocialNetwork/phpfastcache/graphs/contributors"
+                }
+            ],
+            "description": "PHP Abstract Cache Class - Reduce your database call using cache system. Phpfastcache handles a lot of drivers such as Apc(u), Cassandra, CouchBase, Couchdb, Dynamodb, Firestore, Mongodb, Files, (P)redis, Leveldb, Memcache(d), Ravendb, Ssdb, Sqlite, Wincache, Xcache, Zend Data Cache.",
+            "homepage": "https://www.phpfastcache.com",
+            "keywords": [
+                "ArangoDb",
+                "LevelDb",
+                "abstract",
+                "apc",
+                "apcu",
+                "cache",
+                "cache class",
+                "caching",
+                "cassandra",
+                "cookie",
+                "couchbase",
+                "couchdb",
+                "dynamodb",
+                "files cache",
+                "firestore",
+                "memcache",
+                "memcached",
+                "mongodb",
+                "mysql cache",
+                "pdo cache",
+                "php cache",
+                "predis",
+                "ravendb",
+                "redis",
+                "redis cluster",
+                "solr",
+                "ssdb",
+                "wincache",
+                "xcache",
+                "zend",
+                "zend data cache",
+                "zend disk cache",
+                "zend memory cache",
+                "zend server"
+            ],
+            "support": {
+                "docs": "https://github.com/PHPSocialNetwork/phpfastcache/wiki",
+                "issues": "https://github.com/PHPSocialNetwork/phpfastcache/issues",
+                "security": "https://github.com/PHPSocialNetwork/phpfastcache/blob/master/SECURITY.md",
+                "source": "https://github.com/PHPSocialNetwork/phpfastcache",
+                "wiki": "https://github.com/PHPSocialNetwork/phpfastcache/wiki"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/geolim4",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-01-13T06:26:00+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.9.2",
             "source": {
@@ -4662,6 +4794,60 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.3"
             },
             "time": "2024-04-02T15:57:53+00:00"
+        },
+        {
+            "name": "raiym/instagram-php-scraper",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/instagram-core",
+                "reference": "61760f0257b94f0fff466006d10b5e07ef3381a5"
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "guzzlehttp/psr7": "*",
+                "php": ">=7.2",
+                "phpfastcache/phpfastcache": "*",
+                "psr/http-client": "~1.0",
+                "psr/simple-cache": ">=1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.2",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InstagramScraper\\": "src/InstagramScraper/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "InstagramScraper\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "raiym",
+                    "email": "r.kapishev@gmail.com"
+                }
+            ],
+            "description": "Instagram PHP Scraper. Get account information, photos and videos without any authorization",
+            "homepage": "https://github.com/raiym/instagram-php-scraper",
+            "keywords": [
+                "instagram",
+                "scraper"
+            ],
+            "support": {
+                "email": "r.kapishev@gmail.com"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "ralouphie/getallheaders",

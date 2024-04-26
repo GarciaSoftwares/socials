@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Integration;
-use App\Services\Instagram\Instagram;
 use Illuminate\Database\Seeder;
 
 class IntegrationSeeder extends Seeder
